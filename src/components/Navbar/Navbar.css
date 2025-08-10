@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  border-bottom: 2px solid rgb(51, 60, 77);
+}
+
+.logo p{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  
+}
+
+.navbar ul li{
+cursor: pointer;
+letter-spacing: 1px;
+}
+
+.nav-right{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-right select{
+  outline: none;
+  padding: 4px;
+  background: linear-gradient(to bottom,#374151, #166534);
+  border: none;
+  border-radius: 2px;
+ box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+
+.nav-right select option{
+  color: black;
+}
+
+.nav-right button{
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+    background: linear-gradient(to bottom,#374151, #166534);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.nav-right button:hover{
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.25),
+              0 0 25px rgba(167, 243, 208, 0.4);
+  transform: translateY(-2px);
+}
