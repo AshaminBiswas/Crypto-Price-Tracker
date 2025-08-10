@@ -12,7 +12,9 @@
   justify-content: center;
   gap: 24px;
 }
-
+.welcome-text{
+  text-align: center;
+}
 .hero h1 {
   font-size: max(4vw, 36px);
 }
@@ -123,4 +125,51 @@
 
 .market-cap{
     text-align: right;
+}
+
+.table-layout .red{
+  color: rgb(216, 3, 3);
+  text-align: center;
+}
+
+.crypto-table .white{
+  color: white;
+  text-align: center;
+}
+
+
+@media(max-width:567){
+  .table-layout{
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+@media(max-width:480px){
+  .table-layout{
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .hero{
+    margin: 30px auto;
+  }
+
+  .market-cap{
+    display: none;
+  }
+
+  .table-layout div img{
+    width: 24px;
+  }
+ 
+
+ .home{
+  padding: 0px 10px;
+ }
+
+ .welcome-text{
+  padding-bottom: 12px;
+ }
 }

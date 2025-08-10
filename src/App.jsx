@@ -3,6 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
 import { Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
+
 function App() {
   return (
     <div className='app'>
@@ -11,6 +13,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/coin/:coinId' element={<Coin/>}/>
       </Routes>
+      <Footer/>
     </div>
   )
 }

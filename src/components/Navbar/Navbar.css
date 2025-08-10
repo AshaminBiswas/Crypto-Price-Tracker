@@ -4,6 +4,11 @@
   justify-content: space-between;
   padding: 20px 10%;
   border-bottom: 2px solid rgb(51, 60, 77);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: black;
 }
 
 .logo p{
@@ -64,4 +69,47 @@ letter-spacing: 1px;
 box-shadow: 0 0 15px rgba(255, 255, 255, 0.25),
               0 0 25px rgba(167, 243, 208, 0.4);
   transform: translateY(-2px);
+}
+
+
+@media(max-width:900px){
+  .navbar{
+    padding: 20px 8%;
+  }
+}
+
+@media(max-width:768px){
+  .navbar{
+    padding: 20px 5%;
+  }
+.navbar ul{
+    display: none;
+  }
+ 
+  .nav-right{
+    gap: 10px;
+  }
+}
+
+@media(max-width:480px){
+ 
+.navbar{
+    padding: 14px 2%;
+  }
+  .nav-right{
+    gap: 7px;
+    
+  }
+
+  .nav-right button{
+    font-size: 14px;
+  }
+
+  .nav-right select{
+    font-size: 14px;
+  }
+
+  .logo p{
+    font-size: 24px;
+  }
 }
