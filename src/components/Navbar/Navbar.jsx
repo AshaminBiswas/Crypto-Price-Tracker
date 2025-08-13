@@ -30,9 +30,8 @@ const Navbar = () => {
       </Link>
       <ul>
         <Link to={`/`}>Home</Link>
-        <Link>Feature</Link>
-        <Link>Pricing</Link>
-        <Link>Blog</Link>
+        <Link to={`/feature`}>Feature</Link>
+        <Link to={`/blog`}>Blog</Link>
       </ul>
       <div className="nav-right">
         <select onChange={currencyHandler}>
