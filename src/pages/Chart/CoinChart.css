@@ -1,4 +1,4 @@
-/* CoinCharts.css - Simple styling without theme changes */
+
 
 .coin-charts {
   margin: 20px 0;
@@ -48,7 +48,10 @@
   border-radius: 5px;
 }
 
-/* Responsive design */
+
+
+
+
 @media (max-width: 768px) {
   .coin-charts {
     padding: 15px;
