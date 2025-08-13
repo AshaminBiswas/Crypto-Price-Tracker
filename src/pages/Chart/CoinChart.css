@@ -1,0 +1,87 @@
+/* CoinCharts.css - Simple styling without theme changes */
+
+.coin-charts {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.coin-charts h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.chart-section {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chart-section > div {
+  min-width: 600px;
+}
+
+.charts-loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.chart-error {
+  text-align: center;
+  padding: 40px;
+  color: #e53e3e;
+  font-size: 1rem;
+  background: #fed7d7;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .coin-charts {
+    padding: 15px;
+  }
+  
+  .chart-section {
+    padding: 10px;
+  }
+  
+  .chart-section > div {
+    min-width: 500px;
+  }
+  
+  .coin-charts h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .coin-charts {
+    padding: 10px;
+  }
+  
+  .chart-section {
+    padding: 8px;
+  }
+  
+  .chart-section > div {
+    min-width: 400px;
+  }
+  
+  .coin-charts h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+}
