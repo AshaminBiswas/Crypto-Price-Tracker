@@ -5,6 +5,7 @@ import Coin from './pages/Coin/Coin'
 import { Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import Feature from './pages/Feature/Feature'
+import Blog from './pages/Blog/Blog'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/coin/:coinId' element={<Coin/>}/>
         <Route path='/feature' element={<Feature/>}/>
+        <Route path='/blog' element={<Blog/>}/>
       </Routes>
       <Footer/>
     </div>

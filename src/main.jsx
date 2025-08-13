@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import CoinContextProvider from "./context/CoinContext.jsx";
+import { BlogProvider } from "./context/BlogContext.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <CoinContextProvider>
+      <BlogProvider>
       <App />
+      </BlogProvider>
     </CoinContextProvider>
   </BrowserRouter>
 );
